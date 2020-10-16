@@ -1,12 +1,12 @@
 <view class='UCenter-bg'>
   <image src='/images/logo.png' class='png' mode='widthFix'></image>
-  <view class='text-xl'>ColorUI组件库
+  <view class='text-xl'>color
     <text class='text-df'>v2.0</text>
   </view>
   <view class='margin-top-sm'>
-    <text>By:文晓港</text>
+    <text>Copy@liuhui</text>
   </view>
 </view>
 <view class='padding-xl'>
-  <button class='cu-btn  bg-green shadow lg block' open-type="getUserInfo" bindgetuserinfo="onGetUserInfo">微信登录</button>
+  <button class='cu-btn  bg-green shadow lg block' open-type="getUserInfo" bindgetuserinfo="onGetUserInfo">(づ ●─● )づ 微信一键登录</button>
 </view>
