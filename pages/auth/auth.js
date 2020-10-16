@@ -7,10 +7,18 @@ Page({
   },
   onGetUserInfo: function (e) {
     if (!this.logged && e.detail.userInfo) {
+      console.log(app.globalData.userInfo);
       app.globalData.userInfo = e.detail.userInfo;
-      wx.navigateTo({
-        url: '/pages/index/index',
-      })
+      console.log(app.globalData.userInfo);
+      if(app.globalData.userInfo){
+        wx.navigateTo({
+          url: '/pages/index/index',
+        })
+      }else{
+        wx.navigateTo({
+          url: '/pages/auth/auth',
+        })
+      }
     }
   }
 });

@@ -20,6 +20,7 @@ App({
     })
   },
   globalData: {
+    userInfo: null,
     ColorList: [{
         title: '嫣红',
         name: 'red',
