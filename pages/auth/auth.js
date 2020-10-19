@@ -12,6 +12,7 @@ Page({
       console.log(app.globalData.userInfo);
       if(app.globalData.userInfo){
         wx.navigateTo({
+          // url: '/pages/my/my',
           url: '/pages/index/index',
         })
       }else{
