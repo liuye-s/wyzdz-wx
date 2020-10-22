@@ -9,7 +9,7 @@
 	</view>
 	<view class="cu-form-group margin-top">
 		<view class="title">昵称</view>
-		<input placeholder="请输入昵称">{{nickName}}</input>
+		<input style="text-align:right;" placeholder="请输入昵称" bindchange="InputChange" value="{{nickName}}"></input>
 	</view>
 	<view class="cu-form-group">
 		<view class="title">性别</view>
@@ -20,7 +20,7 @@
 		</picker>
   </view>
   <view class="cu-form-group">
-		<view class="title">性别</view>
+		<view class="title">省份</view>
 		<picker bindchange="RegionChange" value="{{index}}" range="{{region}}">
 			<view class="picker">
 				{{index?region[index]:'请选择省份'}}
@@ -45,6 +45,9 @@
 	</view> -->
 	<view class="cu-form-group align-start">
 		<view class="title">个性签名</view>
-		<textarea maxlength="-1" disabled="{{modalName!=null}}" bindinput="textareaBInput" placeholder="我的个性说明"></textarea>
-	</view>
+		<textarea maxlength="-1" disabled="{{modalName!=null}}" bindinput="textareaInput" placeholder="我的个性说明"></textarea>
+  </view>
 </form>
+<view class="padding">
+  <button class="cu-btn block bg-blue margin-tb-m lg" disabled="{{!isChange}}" bindinput="saveUserInfo" >保存修改</button>
+  </view>
