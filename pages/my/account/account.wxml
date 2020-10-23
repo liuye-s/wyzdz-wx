@@ -48,6 +48,6 @@
 		<textarea maxlength="-1" disabled="{{modalName!=null}}" bindinput="textareaInput" placeholder="我的个性说明"></textarea>
   </view>
 </form>
-<view class="padding">
+<view class="padding" style="display:{{!isChange ? 'none' : 'inherit'}}">
   <button class="cu-btn block bg-blue margin-tb-m lg" disabled="{{!isChange}}" bindtap="saveUserInfo" >保存修改</button>
 </view>
