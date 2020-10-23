@@ -49,5 +49,5 @@
   </view>
 </form>
 <view class="padding">
-  <button class="cu-btn block bg-blue margin-tb-m lg" disabled="{{!isChange}}" bindinput="saveUserInfo" >保存修改</button>
-  </view>
+  <button class="cu-btn block bg-blue margin-tb-m lg" disabled="{{!isChange}}" bindtap="saveUserInfo" >保存修改</button>
+</view>
