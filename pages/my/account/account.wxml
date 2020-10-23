@@ -13,17 +13,17 @@
 	</view>
 	<view class="cu-form-group">
 		<view class="title">性别</view>
-		<picker bindchange="PickerChange" value="{{index}}" range="{{sex}}">
+		<picker bindchange="PickerChange" value="{{sexIndex}}" range="{{sex}}">
 			<view class="picker">
-				{{index?sex[index]:'请选择性别'}}
+				{{sexIndex?sex[sexIndex]:'请选择性别'}}
 			</view>
 		</picker>
   </view>
   <view class="cu-form-group">
 		<view class="title">省份</view>
-		<picker bindchange="RegionChange" value="{{index}}" range="{{region}}">
+		<picker bindchange="RegionChange" value="{{regionIndex}}" range="{{region}}">
 			<view class="picker">
-				{{index?region[index]:'请选择省份'}}
+				{{regionIndex?region[regionIndex]:'请选择省份'}}
 			</view>
 		</picker>
   </view>
