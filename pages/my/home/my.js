@@ -57,17 +57,6 @@ Component({
       }
       return e
     },
-    CopyLink(e) {
-      wx.setClipboardData({
-        data: e.currentTarget.dataset.link,
-        success: res => {
-          wx.showToast({
-            title: '已复制',
-            duration: 1000,
-          })
-        }
-      })
-    },
     showModal(e) {
       this.setData({
         modalName: e.currentTarget.dataset.target
@@ -83,6 +72,6 @@ Component({
         urls: ['https://image.weilanwl.com/color2.0/zanCode.jpg'],
         current: 'https://image.weilanwl.com/color2.0/zanCode.jpg' // 当前显示图片的http链接      
       })
-    },
+    }
   }
 })
